@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		
+		function clickbtn(){
+
+			var par = document.getElementsByTagName("p");
+			par[0].style.fontSize = 25;
+			par[1].style.color = "red";
+			par[2].style.fontWeight = 'bold';
+			par[3].style.fontStyle = 'italic';
+
+
+			// for(var i = 0;i<par.length;i++){
+			// 	par[i].style.color = "red";
+			// }
+
+		}
+
+
+	</script>
+
+
+</head>
+<body>
+
+	<p>This is paragraph 1</p>
+	<p>This is paragraph 2</p>
+	<p>This is paragraph 3</p>
+	<p>This is paragraph 4</p>
+
+	<button onclick="clickbtn()">Click me</button>
+
+</body>
+</html>

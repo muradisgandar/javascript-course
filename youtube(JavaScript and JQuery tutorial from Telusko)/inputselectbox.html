@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function clickbtn(){
+			var select = document.getElementById('selectBox');
+			alert(select.options[select.selectedIndex].value);
+
+		}
+
+
+
+	</script>
+
+</head>
+<body>
+	<select id="selectBox">
+		<option value="BMW">BMW</option>
+		<option value="Mercedes" >Mercedes</option>
+		<option value="Audi" >Audi</option>
+		<option value="Volvo" >Volvo</option>
+	</select>
+		<br>
+		<button onclick="clickbtn()">Click me</button>
+
+
+
+</body>
+</html>

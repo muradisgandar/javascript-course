@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Manipulations</title>
+
+	<script type="text/javascript">
+		//.innerHTML is used for taking text of any tag that is defined by unique id
+		function buttonClick(){
+			//below code is shown Some Random Text is changed to Murad Isgandarli by clciked button
+
+			//document.getElementById('heading2').innerHTML = "Murad Isgandarli";
+			//alert("Button Clicked");
+
+			//we take txt and use it in alert function
+			var txt = document.getElementById('heading2').innerHTML;
+			alert(txt);
+		}
+
+
+
+	</script>
+
+
+</head>
+<body>
+	<button onclick="buttonClick()">Click Me</button>
+
+	<h2 id="heading2">Some Random Text</h2>
+
+</body>
+</html>

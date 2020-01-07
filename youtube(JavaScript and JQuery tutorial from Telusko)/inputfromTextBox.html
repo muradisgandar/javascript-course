@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take Input</title>
+	<script type="text/javascript">
+		
+		function clickbtn(){
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if(username==password){
+				alert("Username and Password are equal");
+			}
+			else {
+				alert("Username and Password are different");
+			}
+			
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+	<input type="text" id="username" placeholder="Username">
+	<br>
+	<br>
+	<input type="password" id="password" placeholder="Password">
+	<br>
+	<br>
+	<button onclick="clickbtn()" id="btn1" >Click me</button>
+
+
+
+</body>
+</html>

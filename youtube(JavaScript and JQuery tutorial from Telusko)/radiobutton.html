@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function clickbtn(){
+			var rd1 = document.getElementById('rd1');
+			var rd2 = document.getElementById('rd2');
+
+			if(rd1.checked==true){
+				alert("Selected car model: "+rd1.value);
+			}
+			else if (rd2.checked==true) {
+				alert("Selected car model: "+rd2.value);
+			}else{
+				alert("No model is selected");
+			}
+
+
+
+		}
+
+	</script>
+
+</head>
+<body>
+
+
+	<input type="radio" name="grp" id="rd1" value="bmw">BMW</input><br>
+	<input type="radio" name="grp" id="rd2" value="audi">Audi</input><br>
+	<button onclick="clickbtn()" id="btn1">Click me</button>
+
+</body>
+</html>
