@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+
+	<script type="text/javascript">
+
+		//JS de  single object yaratmaq:
+		var Car = {
+
+			car_brand:"Tesla",
+			car_model:"Model 3",
+			price:35000,
+
+			teslaAutoPilot : function(){
+				 document.write("<h2>This car has auto pilot</h2>");
+			}
+		}
+
+		//by this way we can add new property outside from object scopes
+		Car.fuelType = "Electric";//new property is added
+
+		//by this way we can add new method outside from object scopes
+		Car.newMethod = function(){
+			document.write("New Method is added");
+		}
+
+		//price property sini silecek:
+		//delete Car.price;
+
+		//methos will be removed
+		// delete Car.teslaAutoPilot();
+		// document.write(Car.teslaAutoPilot());
+
+		//for changing property type( because ,JS is dynamically typed language) price  number idi , indi string oldu typeOf(Car.price) deyib baxa bilerik
+
+		// Car.price = "45000";
+
+		// method will be called: below
+		// Car.teslaAutoPilot();
+		
+		// document.write("<h2>"+Car.teslaAutoPilot()+"</h2>");
+
+
+		/*
+		Class yaratmaq : function constructor vasitesile:
+		ve neticede biz multiple objects yarada bilerik:
+
+		*/
+
+		/*function Cars(car_brand,car_model,price){
+			this.car_brand=car_brand;
+			this.car_model=car_model;
+			this.price=price;
+			this.teslaAutoPilot = function(){
+				document.write("<h2>This car has auto pilot</h2>");			
+			}
+
+		}
+		var c1 = new Cars("Tesla", "Model 3", 35000);
+		var c2 = new Cars("Tesla", "Model 3", 40000);
+		// c1.teslaAutoPilot();
+		document.write(c2.price);
+		*/
+
+		//declaration with new keyword it means st1 is  object: belows
+
+		var st1 = new String();//it is string object
+		var st1 = new Boolean();//it is booelean object
+		var st1 = new Number();//it is number object
+
+		//document.write(typeof(st1));
+		//typeOf() method shows variable type on browser , object word will be shown on browser here
+
+		//var s = true;
+		//document.write(typeof(s));
+		//will be shown boolean word onn browser,beacuse it is boolean variable
+
+
+	</script>
+
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
