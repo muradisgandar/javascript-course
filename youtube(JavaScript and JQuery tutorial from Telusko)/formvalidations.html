@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function validate(){
+
+			var username = document.getElementById("user");
+			var password = document.getElementById("pass");
+
+			if(username.value.trim() ==""){
+				// alert("Blank Username");
+				username.style.border = "solid 3px red";
+				document.getElementById("lbluser").style.visibility = "visible";
+				return false;
+			}
+			if(password.value.trim() ==""){
+				// alert("Blank Password");
+				password.style.border = "solid 3px red";
+				document.getElementById("lblpass").style.visibility = "visible";
+
+				return false;
+			}
+			if(password.value.trim().length<5){
+				// alert("Password too short");
+				password.style.border = "solid 3px red";
+				document.getElementById("lblpass").innerHTML = "Password too short";
+				document.getElementById("lblpass").style.visibility = "visible";
+				return false;
+			}
+			else{
+				return true;
+			}
+
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<form onsubmit="return validate()" action="mesageforvalidation.html">
+		<input type="text" id="user" placeholder="Username"/>
+		<label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
+		<br><br>
+
+		<input type="password" id="pass" placeholder="Password"/>
+		<label id="lblpass" style="color:red; visibility: hidden;">Invalid</label>
+		<br><br>
+
+		<button  type="submit">Submit</button>
+
+	</form>
+
+
+</body>
+</html>

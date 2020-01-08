@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function validate(){
+
+			var username = document.getElementById("user");
+			var regx = /E00/i;
+
+			if(regx.test(username.value)){
+				alert("Username");
+				return true;
+			}
+			else{
+				alert("Invalid Username");
+				username.style.border = "solid 3px red";
+				document.getElementById("lbluser").style.visibility = "visible";
+				return false;
+			}
+
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<form  onsubmit="return validate()" action="mesageforvalidation.html">
+		<input type="text" id="user" placeholder="Username"/>
+		<label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
+		<br><br>
+
+		<button  type="submit">Submit</button>
+
+	</form>
+</body>
+</html>
