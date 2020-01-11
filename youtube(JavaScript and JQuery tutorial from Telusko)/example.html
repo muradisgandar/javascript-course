@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function addValues(){
+			var a = document.getElementById("t1").value;
+			var b = document.getElementById("t2").value;
+			document.getElementById("op").innerHTML = "Result = "+(a+b);
+			// console.log(a+b);
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<input type="text" id="t1" placeholder="Text 1"/>
+	<br><br>
+	<input type="text" id="t2" placeholder="Text 2"/>
+	<br><br>
+
+	<button onclick="addValues()" id="btn">Add</button>
+	<h2 id="op">Result = </h2>
+</body>
+</html>
