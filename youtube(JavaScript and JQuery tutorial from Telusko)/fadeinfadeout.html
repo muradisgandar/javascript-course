@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var opacity = 0;
+		var intervalID = 0;
+		function fadeOut(){
+
+			clearInterval(intervalID);
+			intervalID = setInterval(hide,200);
+		}
+
+		function fadeIn(){
+
+			clearInterval(intervalID);
+			intervalID = setInterval(show,200);
+
+		}
+
+		function show(){
+			var img = document.getElementById("img1");
+			opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+			if(opacity<1){
+				opacity = opacity+0.1;
+				img.style.opacity = opacity;
+			}
+			else{
+				clearInterval(intervalID);
+			}
+
+		}
+
+		function hide(){
+			var img = document.getElementById("img1");
+			opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+			if(opacity>0){
+				opacity = opacity-0.1;
+				img.style.opacity = opacity;
+			}
+			else{
+				clearInterval(intervalID);
+			}
+
+		}
+		
+
+
+	</script>
+</head>
+<body>
+
+	<button onclick="fadeOut()" id="btnAdd">Fade Out</button>
+	<br>
+	<img id="img1" src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/02/07150018/file-20171025-25516-g7rtyl-300x216.jpg"/>
+	<br>
+	<button onclick="fadeIn()" id="btnStop">Fade In</button>
+
+
+</body>
+</html>
