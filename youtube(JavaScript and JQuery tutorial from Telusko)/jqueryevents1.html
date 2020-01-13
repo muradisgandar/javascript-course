@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="jqueryselectors2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		//bu ishlemir problem var!
+		$("button").click(fn1);
+
+
+		function fn1(){
+
+			$("#firstdiv").fadeToggle();
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<h2>Setting up Jquery</h2>
+
+	<p>This is a paragraph outside div</p>
+
+	<div id="firstdiv" class="mydivs">
+		<p>This is first paragraph in first division</p>
+		<p>This is second paragraph in first division</p>
+	</div>
+
+	<div id="seconddiv" class="mydivs">
+		<p>This is third paragraph in second division</p>
+	</div>
+
+	<div id="thirddiv" class="mydivs">
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ul>
+	</div>
+
+	<div id="fourthdiv">
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ul>
+	</div>
+
+	<button id="btn">Click me</button>
+
+</body>
+
+</html>
