@@ -3,35 +3,28 @@
 <head>
 	<title></title>
 
-	<link rel="stylesheet" href="jqueryselectors2.css">
+	<link rel="stylesheet" href="animateeffects.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
 
-		//all jquery events inside ready function is worked if we call any of them after all web site elements are loaded
-		//readynin ichinde olan eventler ancaq web site tam load olandan sonra ishledile(chagrila biler)
 		$(document).ready(function(){
 
-			// $("#btn1").click(fn1);
-			// $("#btn1").dblclick(fn1);//for double click
-			$("#btn1").mouseenter(fn1);
-			$("#btn1").mouseleave(fn2);
+			$("#btn3").click(function(){
+
+				//we can create animation with using this method
+				$("#cube").animate({
+
+					left:'150px',
+					opacity: '1'
 
 
-			$("#btn2").hover(fn1,fn2);
+				},1000)
+			});
 
 
-		function fn1(){
-			$("#firstdiv").fadeOut();
-		}
-		function fn2(){
-			$("#firstdiv").fadeIn();
-		}
 
 		});
-
-		
-
 
 	</script>
 </head>
@@ -41,6 +34,7 @@
 
 	<button id="btn1">Click me</button>
 	<button id="btn2">Click me</button>
+	<button id="btn3">Animate</button>
 
 	<p>This is a paragraph outside div</p>
 
@@ -69,6 +63,10 @@
 			<li>List item 3</li>
 			<li>List item 4</li>
 		</ul>
+	</div>
+
+	<div id="cube" class="mycube">
+		<p>CUBE</p>
 	</div>
 
 	
