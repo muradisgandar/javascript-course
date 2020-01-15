@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="animateeffects.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#btn1").click(function(){
+
+				//for changing atribute value to ptag2
+				// $("#p1").attr("class","ptag2");
+				$("#p1").css("font-family","Times New Roman");
+
+				
+			});
+
+			$("#btn2").click(function(){
+
+				// for get attribute value
+				// alert($("#p1").attr("class"));
+
+				alert($("#p1").css("font-family"));
+
+			});
+
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<h2>jQuery DOM manipulations Part-2</h2>
+
+	<button id="btn1">Set value</button>
+	<button id="btn2">Get value</button>
+
+
+	<div id="firstdiv" class="mydivs">
+		<p id="p1" class="ptag" value="write">This is first <b>paragraph in</b> first division</p>
+		
+	</div>
+
+
+		
+
+</body>
+
+</html>

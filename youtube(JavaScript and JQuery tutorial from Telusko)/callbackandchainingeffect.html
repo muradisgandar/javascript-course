@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="animateeffects.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#btn1").click(function(){
+				//alert funksiyanin bu shekilde  chagrilmasi callback adlanir
+
+				// $("#firstdiv").slideToggle(3000,function(){
+				// 	alert("division is faded")
+				// });
+
+
+				//bu yazilish chaining adlanir,her defe selector istfade etmeyin yerine bir setirde bir neche funksiyani bir birinin ardiyca yazmaq olar
+				$("#firstdiv").slideUp(2000).slideDown(2000).fadeOut(1000).fadeIn(3000);
+
+			});
+			
+
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<h2>Callback and Chaining Effects</h2>
+
+	<button id="btn1">Toggle</button>
+
+
+	<div id="firstdiv" class="mydivs">
+		<p>This is first paragraph in first division</p>
+		<p>This is second paragraph in first division</p>
+	</div>
+
+	<div id="seconddiv" class="mydivs">
+		<p>This is third paragraph in second division</p>
+	</div>
+
+		
+
+</body>
+
+</html>
