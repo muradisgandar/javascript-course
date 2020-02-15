@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Murad isgandarli",
+        "department" : "IT",
+        "salary" : 3500
+    },
+
+    {
+        "name" : "Elkhan Abdullaev",
+        "department" : "HR",
+        "salary" : 4000
+
+    },
+
+    {
+        "name" : "Safa Alizada",
+        "department" : "Service",
+        "salary" : 2000
+    }
+]
