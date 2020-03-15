@@ -61,6 +61,8 @@ const request = new Request();
 //     })
 //     .catch(err => console.error(err));
 
+
+
 // request.post("https://jsonplaceholder.typicode.com/albums", { userId: 1, title: "Titanik" })
 //     .then(newAlbum => console.log(newAlbum))
 //     .catch(err => console.log(err));
