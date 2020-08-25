@@ -19,7 +19,7 @@ function App() {
       />
 
       <User
-        name="Murad Isgandarli"
+        name="Jhon Doe"
         salary="5000"
         department="Programming"
 
