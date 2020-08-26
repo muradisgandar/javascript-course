@@ -57,10 +57,10 @@ class User extends Component {
 
                     {
                         isVisible ? <div className="card-body">
-
+                            <p className="card-text">Name : {name}</p>
                             <p className="card-text">Salary : {salary}</p>
                             <p className="card-text">Department : {department}</p>
-                            <p>{this.state.test}</p>
+                            
                         </div> : null
                     }
 
