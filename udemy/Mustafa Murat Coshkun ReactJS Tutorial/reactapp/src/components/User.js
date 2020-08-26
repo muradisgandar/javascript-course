@@ -4,6 +4,11 @@ import PropTypes from 'prop-types'
 
 class User extends Component {
 
+    // thera are 2 ways for initilize state , one of them in below form and another is in constructor(commented in below)
+    state = {
+        isVisible : false
+    }
+
     //same as below User.defaultProps block
     static defaultProps = {
         name: "Murad",
@@ -19,11 +24,20 @@ class User extends Component {
         department: PropTypes.string.isRequired
     }
 
+    // constructor(props) {
+    //     super(props);
+
+    //     this.state = {
+    //         isVisible: false
+    //     }
+    // }
+
 
     render() {
 
         // Destructing from JS
         const { name, department, salary } = this.props;
+        const { isVisible } = this.state;
 
         return (
             <div className="col-md-8 mb-4">
@@ -33,11 +47,16 @@ class User extends Component {
                         <i className="fas fa-trash-alt" style={{ cursor: "pointer" }}></i>
                     </div>
 
-                    <div className="card-body">
+                    {
+                        isVisible ? <div className="card-body">
 
-                        <p className="card-text">Salary : {salary}</p>
-                        <p className="card-text">Department : {department}</p>
-                    </div>
+                            <p className="card-text">Salary : {salary}</p>
+                            <p className="card-text">Department : {department}</p>
+                            <p>{this.state.test}</p>
+                        </div> : null
+                    }
+
+
                 </div>
 
 
