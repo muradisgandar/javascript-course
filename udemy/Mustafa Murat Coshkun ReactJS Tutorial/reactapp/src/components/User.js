@@ -34,7 +34,10 @@ class User extends Component {
 
 
     onClickEvent = (number,e) => {
-        console.log(number);
+        // for changing state
+        this.setState({
+            isVisible : !this.state.isVisible
+        })
         
     }
 
