@@ -21,7 +21,8 @@ class User extends Component {
     static propTypes = {
         name: PropTypes.string.isRequired,
         salary: PropTypes.string.isRequired,
-        department: PropTypes.string.isRequired
+        department: PropTypes.string.isRequired,
+        deleteUser : PropTypes.func.isRequired
     }
 
     constructor(props) {
@@ -30,6 +31,11 @@ class User extends Component {
         // we can define bind(this) in here or best case we can write method as arrow function
         // in below and then no need to write this binding operation in anywhere
         // this.onClickEvent = this.onClickEvent.bind(this);
+    }
+
+    onDeleteUser = (e) =>{
+        const {id,deleteUser}  = this.props;
+        deleteUser(id);
     }
 
 
@@ -52,7 +58,7 @@ class User extends Component {
                 <div className="card">
                     <div className="card-header d-flex justify-content-between">
                         <h4 className="d-inline" onClick = {this.onClickEvent.bind(this,34)}>{name}</h4>
-                        <i className="fas fa-trash-alt" style={{ cursor: "pointer" }}></i>
+                        <i onClick = {this.onDeleteUser} className="fas fa-trash-alt" style={{ cursor: "pointer" }}></i>
                     </div>
 
                     {
@@ -73,17 +79,5 @@ class User extends Component {
         )
     }
 }
-
-// User.propTypes = {
-//     name: PropTypes.string.isRequired,
-//     salary: PropTypes.string.isRequired,
-//     department: PropTypes.string.isRequired
-// }
-
-// User.defaultProps = {
-//     name: "Murad",
-//     salary: 4000,
-//     department: "Programming"
-// }
 
 export default User;
