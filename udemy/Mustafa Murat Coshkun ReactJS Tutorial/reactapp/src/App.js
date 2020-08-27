@@ -7,35 +7,7 @@ import './App.css';
 
 class App extends Component {
 
-  state = {
-
-    users: [
-
-      {
-        id: 1,
-        name="Murad Isgandarli",
-        salary="5000",
-        department="Programming"
-
-      },
-
-      {
-        id: 2,
-        name="Jhon Doe",
-        salary="5000",
-        department="Engineering"
-
-      },
-
-      {
-        id: 3,
-        name="Jhon Frank",
-        salary="5000",
-        department="Business"
-
-      }
-    ]
-  }
+  
 
   deleteUser = (id) => {
     this.setState({
