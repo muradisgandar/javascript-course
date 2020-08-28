@@ -22,7 +22,7 @@ class User extends Component {
         name: PropTypes.string.isRequired,
         salary: PropTypes.string.isRequired,
         department: PropTypes.string.isRequired,
-        deleteUser : PropTypes.func.isRequired
+        id : PropTypes.number.isRequired
     }
 
     constructor(props) {
@@ -34,8 +34,8 @@ class User extends Component {
     }
 
     onDeleteUser = (e) =>{
-        const {id,deleteUser}  = this.props;
-        deleteUser(id);
+        // const {id}  = this.props;
+        // Consumer dispatch
     }
 
 
