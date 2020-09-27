@@ -1,8 +1,8 @@
             //forEach using
 // let langs = ["Java","JS","C++"];
 
-// langs.forEach(function(langs,index){
-//     console.log(langs,index);
+// langs.forEach(function(lang,index){
+//     console.log(lang,index);
 // });
 
             // map function using
