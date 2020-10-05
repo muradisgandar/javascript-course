@@ -40,7 +40,7 @@ const mySet2 = new Set([100,3.14,"Mustafa"]);  // Creating array from set
 //     console.log(value);
 // }
 
-// Creating set from array
+// Creating array from set
 const array = Array.from(mySet);
 console.log(array);
 
