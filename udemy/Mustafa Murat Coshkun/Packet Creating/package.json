@@ -1,0 +1,25 @@
+{
+  "name": "muradtest",
+  "version": "1.0.0",
+  "description": "it is for testing project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "murad": "echo 'menim adim Muraddir'",
+    "start": "node index"
+  },
+  "keywords": [
+    "test",
+    "paket"
+  ],
+  "author": "Murad Isgandarli",
+  "license": "ISC",
+  "dependencies": {
+    "mongose": "0.0.2-security",
+    "nodemailer": "^6.4.14",
+    "simple-is": "^0.2.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.1.0"
+  }
+}
