@@ -9,7 +9,7 @@ const users = [
 const app = express();
 
 const PORT = 5000;
-app.use(express.json());
+app.use(express.json()); // req.body edib gelen datani serverde tutmaq uchun express.json() middleware app levelde istifade olunmaidir
 // app.use(accessControl); // butun route(url) lardan evvel ishleyecek
 // Get request
 // localhost:5000/users
