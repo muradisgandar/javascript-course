@@ -11,25 +11,25 @@ export class UserProvider extends Component {
 
             {
                 id: 1,
-                name="Murad Isgandarli",
-                salary="5000",
-                department="Programming"
+                name:"Murad Isgandarli",
+                salary:"5000",
+                department:"Programming"
 
             },
 
             {
                 id: 2,
-                name="Jhon Doe",
-                salary="5000",
-                department="Engineering"
+                name:"Jhon Doe",
+                salary:"5000",
+                department:"Engineering"
 
             },
 
             {
                 id: 3,
-                name="Jhon Frank",
-                salary="5000",
-                department="Business"
+                name:"Jhon Frank",
+                salary:"5000",
+                department:"Business"
 
             }
         ]
